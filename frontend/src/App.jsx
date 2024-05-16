@@ -44,10 +44,11 @@ function App() {
     <>
 
     {/* Add User Button ......................................................................... */}
-      <div className="h-20 w-full bg-red-400 relative">
+      <div className="h-20 w-full bg-red-400 flex justify-between items-center px-3">
+        <h1 className="font-bold text-start text-2xl">User Store ..</h1>
         {!showAdd && (
           <button
-            className="absolute right-1 bg-neutral-50 p-2 mt-4 text-xl"
+            className=" bg-neutral-50 p-2 text-xl rounded-lg font-bold"
             onClick={toggleForm}
           >
             Add User
@@ -77,7 +78,7 @@ function App() {
                   name="name"
                   onChange={handleOnchange}
                   value={items.name}
-                  className="mt-1 p-2 w-full border rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                  className="mt-1 p-2 w-full border rounded-md"
                   required
                 />
               </div>
@@ -91,7 +92,7 @@ function App() {
                   name="fathername"
                   onChange={handleOnchange}
                   value={items.fathername}
-                  className="mt-1 p-2 w-full border rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                  className="mt-1 p-2 w-full border rounded-md "
                   required
                 />
               </div>
@@ -105,7 +106,7 @@ function App() {
                   name="email"
                   onChange={handleOnchange}
                   value={items.email}
-                  className="mt-1 p-2 w-full border rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                  className="mt-1 p-2 w-full border rounded-md"
                   required
                 />
               </div>
@@ -119,14 +120,14 @@ function App() {
                   name="phone"
                   onChange={handleOnchange}
                   value={items.phone}
-                  className="mt-1 p-2 w-full border rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                  className="mt-1 p-2 w-full border rounded-md "
                   required
                 />
               </div>
               <div className="text-center ">
                 <button
                   type="submit"
-                  className="bg-gray-100 hover:bg-gray-300 text-black font-bold py-2 px-4 mt-4 rounded focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50"
+                  className="bg-gray-100 text-black font-bold py-2 px-4 mt-4 rounded"
                 >
                   Submit
                 </button>
