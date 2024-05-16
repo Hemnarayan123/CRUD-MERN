@@ -23,7 +23,7 @@ function Table() {
 
   useEffect(() => {
     fetchData();
-  }, []);
+  },[]);
 
   const deleteUser = async (id) => {
     try {
